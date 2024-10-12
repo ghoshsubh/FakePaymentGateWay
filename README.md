@@ -1,11 +1,15 @@
-# FakePaymentGateWay
+# Fake Payment GateWay
 
 # Requirements
 1. javascript, html, css for frontend
 2. python for backend
 3. MySQL for database
+# Git clone
+```
+git clone https://github.com/ghoshsubh/FakePaymentGateWay.git
+```
+   
 # Setup Environment
-
 ```
 python -m venv api_gateway
 conda activatye api_gateway

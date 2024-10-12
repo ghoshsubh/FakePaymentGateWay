@@ -11,14 +11,15 @@ git clone https://github.com/ghoshsubh/FakePaymentGateWay.git
    
 # Setup Environment
 ```
-python -m venv api_gateway
-conda activatye api_gateway
+cd FakePaymentGateWay
+python -m venv FakePaymentGateWay
+conda activatye FakePaymentGateWay
 pip install -r requirements.txt
 ```
 `or`
 ```
 conda env create -f environment.yml
-conda activate api_gateway
+conda activate FakePaymentGateWay
 ```
 # Run the Server
 ```

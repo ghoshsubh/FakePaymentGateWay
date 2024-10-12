@@ -96,5 +96,7 @@ This will add a new transaction to the database and return the payment ID of the
 
 # Screenshots
 ![image](screenshots/payment_page.png)
+
 ![image](screenshots/see_payment_details.png)
+
 ![image](screenshots/transaction_details.png)

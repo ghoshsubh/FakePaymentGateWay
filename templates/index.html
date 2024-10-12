@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center items horizontally */
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left; /* Align label text to the left */
+            width: 100%; /* Make label take full width */
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #responseMessage {
+            display: none; /* Initially hidden */
+            margin-top: 20px;
+            text-align: center; /* Center text */
+            color: #a72837; /* Optional: set text color */
+            font-weight: bold; /* Optional: make the text bold */
+            width: 100%; /* Ensure it takes full width of the form */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Details</h1>
+        <form id="paymentForm">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" required>
+
+            <label for="cardHolderName">Card Holder Name:</label>
+            <input type="text" id="cardHolderName" required>
+
+            <label for="expireDate">Expire Date:</label>
+            <input type="date" id="expireDate" required> <!-- Changed to date input -->
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" required>
+
+            <button type="submit">Make Payment</button>
+            
+            <!-- Response message below the button -->
+            <a id="responseMessage" style="display: none;" target="Transaction Details">Transaction Details</a>
+        </form>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
